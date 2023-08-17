@@ -390,6 +390,16 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-tabl-conteiner">
+            <p class="footer-tabl-name">Subscribe</p>
+            <label>
+                <input class="input-email" type="email" name="email" placeholder="Email" />
+            </label>
+            <button class="footer-tabl-btn" type="button">Subscribe <svg height="16">
+                    <use href="./images/icon5.svg#icon-icon-send"></use>
+                </svg></button>
+            </svg>
+        </div>
     </div>    
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -398,7 +408,31 @@
            <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
            </svg>
-           </button> 
+           </button>
+           <p class="modal-tabl-title">Leave your contacts and we will call you back</p>
+           <form>
+           <label class="modal-label modal-label-first">
+            Name
+            <input class="modal-input" type="text" name="name" autofocus />
+           </label>
+           <label class="modal-label">
+            Phone
+            <input class="modal-input" type="tel" name="phone" />
+           </label> 
+           <label class="modal-label">
+            Email
+            <input class="modal-input" type="email" name="email" />
+           </label>
+           <label class="modal-label">
+            Comment
+            <textarea class="modal-textarea" name="comment" row="5" placeholder="Text input"></textarea>
+           </label>
+           <div class="checkbox-container">
+           <input class="modal-checkbox" type="checkbox" name="I accept the terms and conditions of the Privacy Policy" />
+           <p class="checkbox-text">I accept the terms and conditions of the <span class="checkbox-span">Privacy Policy</span></p>
+           </div>
+           <button type="button" class="modal-button">Send</button>
+        </form>
        </div>
     </div>
     <script src="./js/modal.js"></script>
