@@ -806,7 +806,6 @@ body {
 
 .modal-form {
     margin-bottom: 8px;
-    position: relative;
 }
 
 .modal-label {
@@ -818,6 +817,10 @@ body {
     line-height: 1.17;
     letter-spacing: 0.48px;
     margin-bottom: 4px;
+}
+
+.modal-input-container {
+    position: relative;
 }
 
 .modal-input {
@@ -849,7 +852,7 @@ body {
     top: 50%;
 }
 
-.modal-input:hover {
+.modal-icon:hover {
     border-color: #4D5AE5;
 }
 
