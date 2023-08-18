@@ -840,13 +840,9 @@ body {
     border-color: #4D5AE5;
 }
 
-.modal-input:focus {
+.modal-input:focus + .modal-icon{
     border-color: #4D5AE5;
     fill: #4D5AE5
-}
-
-.modal-input:focus .modal-icon {
-    fill: #4D5AE5;
 }
 
 .modal-icon {
@@ -879,7 +875,6 @@ body {
 
 .modal-textarea:focus {
     border-color: #4D5AE5;
-    margin-bottom: 24px;
 }
 
 .modal-form-textarea {
@@ -888,6 +883,7 @@ body {
 
 .checkbox-container {
     display: flex;
+    margin-bottom: 24px;
 }
 
 .modal-checkbox {
@@ -918,7 +914,7 @@ body {
     fill: transparent;    
 }
 
-.modal-checkbox:checked .checkbox-span {
+.modal-checkbox:checked +.checkbox-span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
