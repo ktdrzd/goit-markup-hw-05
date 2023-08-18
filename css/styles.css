@@ -548,7 +548,7 @@ body {
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
     padding-left: 16px;
     color: #ffffff;
 }
@@ -565,13 +565,14 @@ body {
     border-radius: 4px;
     background: #4D5AE5;
     color: #ffffff;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     border: none;
+
 }
 
 .ft-form-icon {
@@ -844,6 +845,10 @@ body {
     fill: #4D5AE5
 }
 
+.modal-input:focus .modal-icon {
+    fill: #4D5AE5;
+}
+
 .modal-icon {
     position: absolute;
     left: 16px;
@@ -874,6 +879,7 @@ body {
 
 .modal-textarea:focus {
     border-color: #4D5AE5;
+    margin-bottom: 24px;
 }
 
 .modal-form-textarea {
@@ -912,6 +918,12 @@ body {
     fill: transparent;    
 }
 
+.modal-checkbox:checked .checkbox-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .label-link {
     color:#4d5ae5;
 }
@@ -929,7 +941,7 @@ body {
     text-align: center;
     display: block;
     font-weight: 500;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
