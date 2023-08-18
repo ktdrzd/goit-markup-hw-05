@@ -443,13 +443,15 @@
             </svg>
         </div>
         </div>
-           <label class="modal-label">
-            Comment
-            <textarea class="modal-textarea" name="comment" row="5" placeholder="Text input"></textarea>
-           </label>
+
+        <div class="modal-form-textarea">
+           <label class="modal-label" for="user-comment">Comment</label>
+            <textarea class="modal-textarea" id="user-comment" name="user-comment" row="5" placeholder="Text input"></textarea>
+        </div>  
+
            <div class="checkbox-container">
-           <input class="modal-checkbox" type="checkbox" name="I accept the terms and conditions of the Privacy Policy" />
-           <p class="checkbox-text">I accept the terms and conditions of the <span class="checkbox-span">Privacy Policy</span></p>
+           <input class="modal-checkbox visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy" />
+           <label class="modal-checkbox-text" for="user-privacy">I accept the terms and conditions of the <span class="checkbox-span">Privacy Policy</span></label>
            </div>
            <button type="button" class="modal-button">Send</button>
         </form>

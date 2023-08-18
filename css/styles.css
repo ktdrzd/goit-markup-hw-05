@@ -859,8 +859,25 @@ body {
 .modal-textarea {
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-    width: 360px;
     height: 120px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-form-textarea {
+    margin-bottom: 16px;
 }
 
 .checkbox-container {
@@ -870,17 +887,15 @@ body {
 .modal-checkbox {
     width: 16px;
     height: 16px;
-    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
-.checkbox-text {
-    color: #8E8F99;
+.modal-checkbox-text {
+    display: block;
     font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.48px;
-    margin-top: 16px;
-    margin-left: 8px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 }
 
 .checkbox-span {
@@ -904,7 +919,4 @@ body {
     width: 169px;
     height: 56px;
     text-align: center;
-    margin-top: 24px;
-    margin-left: 119px;
-    padding: 16px 64px;
 }
